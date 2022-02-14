@@ -1,0 +1,21 @@
+PODS:
+  - AYTikTokPod (1.2.1)
+  - LookinServer (1.0.0)
+
+DEPENDENCIES:
+  - AYTikTokPod
+  - LookinServer
+
+SPEC REPOS:
+  https://github.com/AloneMonkey/MonkeyDevSpecs.git:
+    - AYTikTokPod
+  https://github.com/CocoaPods/Specs.git:
+    - LookinServer
+
+SPEC CHECKSUMS:
+  AYTikTokPod: 0cc56c7b5eced74016b2a3d3e66b46744f0a7bc8
+  LookinServer: 0002891cd3cec5e082a910e897dfe71b4f06b89e
+
+PODFILE CHECKSUM: 1346808a1d7ab4bc02d204d3428d3ea1425f1721
+
+COCOAPODS: 1.10.2

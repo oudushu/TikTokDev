@@ -1,0 +1,835 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4600604AB0953D82E71C0991 /* Pods_TikTokDevDylib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA6E883A4B79AAF1D16F39A /* Pods_TikTokDevDylib.framework */; };
+		A07346B026D4EEAD0021ED07 /* MDConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = A07346AF26D4EEAD0021ED07 /* MDConfig.plist */; };
+		A07346BA26D4EEAD0021ED07 /* libTikTokDevDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = A07346B926D4EEAD0021ED07 /* libTikTokDevDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		A07346BF26D4EEAD0021ED07 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A07346BE26D4EEAD0021ED07 /* JavaScriptCore.framework */; };
+		A07346C126D4EEAD0021ED07 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A07346C026D4EEAD0021ED07 /* Foundation.framework */; };
+		A07346C326D4EEAD0021ED07 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A07346C226D4EEAD0021ED07 /* UIKit.framework */; };
+		A07346C826D4EEAD0021ED07 /* TikTokDevDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = A07346C726D4EEAD0021ED07 /* TikTokDevDylib.mm */; };
+		A07346CB26D4EEAD0021ED07 /* MDConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A07346CA26D4EEAD0021ED07 /* MDConfigManager.h */; };
+		A07346CD26D4EEAD0021ED07 /* MDConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A07346CC26D4EEAD0021ED07 /* MDConfigManager.m */; };
+		A07346CF26D4EEAD0021ED07 /* MDCycriptManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A07346CE26D4EEAD0021ED07 /* MDCycriptManager.h */; };
+		A07346D126D4EEAD0021ED07 /* MDCycriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A07346D026D4EEAD0021ED07 /* MDCycriptManager.m */; };
+		A07346D326D4EEAD0021ED07 /* MDMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = A07346D226D4EEAD0021ED07 /* MDMethodTrace.h */; };
+		A07346D526D4EEAD0021ED07 /* MDMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = A07346D426D4EEAD0021ED07 /* MDMethodTrace.m */; };
+		A07346D826D4EEAD0021ED07 /* a1a2-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = A07346D726D4EEAD0021ED07 /* a1a2-selectortramps-arm.s */; };
+		A07346DA26D4EEAD0021ED07 /* a1a2-selectortramps-arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = A07346D926D4EEAD0021ED07 /* a1a2-selectortramps-arm64.s */; };
+		A07346DC26D4EEAD0021ED07 /* a1a2-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = A07346DB26D4EEAD0021ED07 /* a1a2-selectortramps-i386.s */; };
+		A07346DE26D4EEAD0021ED07 /* a1a2-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = A07346DD26D4EEAD0021ED07 /* a1a2-selectortramps-x86_64.s */; };
+		A07346E026D4EEAE0021ED07 /* a2a3-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = A07346DF26D4EEAD0021ED07 /* a2a3-selectortramps-arm.s */; };
+		A07346E226D4EEAE0021ED07 /* a2a3-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = A07346E126D4EEAE0021ED07 /* a2a3-selectortramps-i386.s */; };
+		A07346E426D4EEAE0021ED07 /* a2a3-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = A07346E326D4EEAE0021ED07 /* a2a3-selectortramps-x86_64.s */; };
+		A07346E626D4EEAE0021ED07 /* OCMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = A07346E526D4EEAE0021ED07 /* OCMethodTrace.h */; };
+		A07346E826D4EEAE0021ED07 /* OCMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = A07346E726D4EEAE0021ED07 /* OCMethodTrace.m */; };
+		A07346EA26D4EEAE0021ED07 /* OCSelectorTrampolines.h in Headers */ = {isa = PBXBuildFile; fileRef = A07346E926D4EEAE0021ED07 /* OCSelectorTrampolines.h */; };
+		A07346EC26D4EEAE0021ED07 /* OCSelectorTrampolines.mm in Sources */ = {isa = PBXBuildFile; fileRef = A07346EB26D4EEAE0021ED07 /* OCSelectorTrampolines.mm */; };
+		A07346F026D4EEAE0021ED07 /* LLDBTools.h in Headers */ = {isa = PBXBuildFile; fileRef = A07346EF26D4EEAE0021ED07 /* LLDBTools.h */; };
+		A07346F226D4EEAE0021ED07 /* LLDBTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = A07346F126D4EEAE0021ED07 /* LLDBTools.mm */; };
+		A07346F726D4EEAE0021ED07 /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = A07346F626D4EEAE0021ED07 /* AntiAntiDebug.m */; };
+		A07346FA26D4EEAE0021ED07 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = A07346F926D4EEAE0021ED07 /* fishhook.c */; };
+		A07346FC26D4EEAE0021ED07 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = A07346FB26D4EEAE0021ED07 /* fishhook.h */; };
+		A07346FE26D4EEAE0021ED07 /* TikTokDevDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = A07346FD26D4EEAE0021ED07 /* TikTokDevDylib.h */; };
+		A073470026D4EEAE0021ED07 /* TikTokDevDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = A07346FF26D4EEAE0021ED07 /* TikTokDevDylib.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A07346BB26D4EEAD0021ED07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A073469D26D4EEAD0021ED07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A07346B826D4EEAD0021ED07;
+			remoteInfo = TikTokDevDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A07346A526D4EEAD0021ED07 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A07346BA26D4EEAD0021ED07 /* libTikTokDevDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		57718D655B2ED0EFC6FE8895 /* Pods-TikTokDevDylib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikTokDevDylib.debug.xcconfig"; path = "Target Support Files/Pods-TikTokDevDylib/Pods-TikTokDevDylib.debug.xcconfig"; sourceTree = "<group>"; };
+		7711188D24A4A141B8EB5107 /* Pods-TikTokDevDylib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikTokDevDylib.release.xcconfig"; path = "Target Support Files/Pods-TikTokDevDylib/Pods-TikTokDevDylib.release.xcconfig"; sourceTree = "<group>"; };
+		A07346A826D4EEAD0021ED07 /* TikTokDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TikTokDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A07346AB26D4EEAD0021ED07 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		A07346AD26D4EEAD0021ED07 /* quick-resign.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "quick-resign.sh"; sourceTree = "<group>"; };
+		A07346AF26D4EEAD0021ED07 /* MDConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MDConfig.plist; sourceTree = "<group>"; };
+		A07346B226D4EEAD0021ED07 /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; path = "put ipa or app here"; sourceTree = "<group>"; };
+		A07346B326D4EEAD0021ED07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A07346B926D4EEAD0021ED07 /* libTikTokDevDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libTikTokDevDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		A07346BE26D4EEAD0021ED07 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		A07346C026D4EEAD0021ED07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A07346C226D4EEAD0021ED07 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A07346C626D4EEAD0021ED07 /* TikTokDevDylib.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = TikTokDevDylib.xm; sourceTree = "<group>"; };
+		A07346C726D4EEAD0021ED07 /* TikTokDevDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TikTokDevDylib.mm; sourceTree = "<group>"; };
+		A07346CA26D4EEAD0021ED07 /* MDConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDConfigManager.h; sourceTree = "<group>"; };
+		A07346CC26D4EEAD0021ED07 /* MDConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDConfigManager.m; sourceTree = "<group>"; };
+		A07346CE26D4EEAD0021ED07 /* MDCycriptManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDCycriptManager.h; sourceTree = "<group>"; };
+		A07346D026D4EEAD0021ED07 /* MDCycriptManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDCycriptManager.m; sourceTree = "<group>"; };
+		A07346D226D4EEAD0021ED07 /* MDMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDMethodTrace.h; sourceTree = "<group>"; };
+		A07346D426D4EEAD0021ED07 /* MDMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDMethodTrace.m; sourceTree = "<group>"; };
+		A07346D726D4EEAD0021ED07 /* a1a2-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-arm.s"; sourceTree = "<group>"; };
+		A07346D926D4EEAD0021ED07 /* a1a2-selectortramps-arm64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-arm64.s"; sourceTree = "<group>"; };
+		A07346DB26D4EEAD0021ED07 /* a1a2-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-i386.s"; sourceTree = "<group>"; };
+		A07346DD26D4EEAD0021ED07 /* a1a2-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		A07346DF26D4EEAD0021ED07 /* a2a3-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-arm.s"; sourceTree = "<group>"; };
+		A07346E126D4EEAE0021ED07 /* a2a3-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-i386.s"; sourceTree = "<group>"; };
+		A07346E326D4EEAE0021ED07 /* a2a3-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		A07346E526D4EEAE0021ED07 /* OCMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMethodTrace.h; sourceTree = "<group>"; };
+		A07346E726D4EEAE0021ED07 /* OCMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMethodTrace.m; sourceTree = "<group>"; };
+		A07346E926D4EEAE0021ED07 /* OCSelectorTrampolines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCSelectorTrampolines.h; sourceTree = "<group>"; };
+		A07346EB26D4EEAE0021ED07 /* OCSelectorTrampolines.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OCSelectorTrampolines.mm; sourceTree = "<group>"; };
+		A07346ED26D4EEAE0021ED07 /* selectortramps.mac */ = {isa = PBXFileReference; lastKnownFileType = text; path = selectortramps.mac; sourceTree = "<group>"; };
+		A07346EF26D4EEAE0021ED07 /* LLDBTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLDBTools.h; sourceTree = "<group>"; };
+		A07346F126D4EEAE0021ED07 /* LLDBTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LLDBTools.mm; sourceTree = "<group>"; };
+		A07346F426D4EEAE0021ED07 /* TikTokDevDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "TikTokDevDylib-Prefix.pch"; path = "../TikTokDevDylib-Prefix.pch"; sourceTree = "<group>"; };
+		A07346F626D4EEAE0021ED07 /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AntiAntiDebug.m; sourceTree = "<group>"; };
+		A07346F926D4EEAE0021ED07 /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
+		A07346FB26D4EEAE0021ED07 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		A07346FD26D4EEAE0021ED07 /* TikTokDevDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TikTokDevDylib.h; sourceTree = "<group>"; };
+		A07346FF26D4EEAE0021ED07 /* TikTokDevDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TikTokDevDylib.m; sourceTree = "<group>"; };
+		BCA6E883A4B79AAF1D16F39A /* Pods_TikTokDevDylib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TikTokDevDylib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A07346A226D4EEAD0021ED07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A07346B626D4EEAD0021ED07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A07346BF26D4EEAD0021ED07 /* JavaScriptCore.framework in Frameworks */,
+				A07346C326D4EEAD0021ED07 /* UIKit.framework in Frameworks */,
+				A07346C126D4EEAD0021ED07 /* Foundation.framework in Frameworks */,
+				4600604AB0953D82E71C0991 /* Pods_TikTokDevDylib.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A073469C26D4EEAD0021ED07 = {
+			isa = PBXGroup;
+			children = (
+				A07346AA26D4EEAD0021ED07 /* TikTokDev */,
+				A07346C426D4EEAD0021ED07 /* TikTokDevDylib */,
+				A07346BD26D4EEAD0021ED07 /* Frameworks */,
+				A07346A926D4EEAD0021ED07 /* Products */,
+				C41E1E8BA3269F498D3AA5EC /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		A07346A926D4EEAD0021ED07 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A07346A826D4EEAD0021ED07 /* TikTokDev.app */,
+				A07346B926D4EEAD0021ED07 /* libTikTokDevDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A07346AA26D4EEAD0021ED07 /* TikTokDev */ = {
+			isa = PBXGroup;
+			children = (
+				A07346AB26D4EEAD0021ED07 /* icon.png */,
+				A07346B326D4EEAD0021ED07 /* Info.plist */,
+				A07346AC26D4EEAD0021ED07 /* Scripts */,
+				A07346AE26D4EEAD0021ED07 /* Config */,
+				A07346B126D4EEAD0021ED07 /* TargetApp */,
+			);
+			path = TikTokDev;
+			sourceTree = "<group>";
+		};
+		A07346AC26D4EEAD0021ED07 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				A07346AD26D4EEAD0021ED07 /* quick-resign.sh */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		A07346AE26D4EEAD0021ED07 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				A07346AF26D4EEAD0021ED07 /* MDConfig.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		A07346B126D4EEAD0021ED07 /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				A07346B226D4EEAD0021ED07 /* put ipa or app here */,
+			);
+			path = TargetApp;
+			sourceTree = "<group>";
+		};
+		A07346BD26D4EEAD0021ED07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A07346BE26D4EEAD0021ED07 /* JavaScriptCore.framework */,
+				A07346C026D4EEAD0021ED07 /* Foundation.framework */,
+				A07346C226D4EEAD0021ED07 /* UIKit.framework */,
+				BCA6E883A4B79AAF1D16F39A /* Pods_TikTokDevDylib.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A07346C426D4EEAD0021ED07 /* TikTokDevDylib */ = {
+			isa = PBXGroup;
+			children = (
+				A07346FD26D4EEAE0021ED07 /* TikTokDevDylib.h */,
+				A07346FF26D4EEAE0021ED07 /* TikTokDevDylib.m */,
+				A07346C526D4EEAD0021ED07 /* Logos */,
+				A07346C926D4EEAD0021ED07 /* Config */,
+				A07346D626D4EEAD0021ED07 /* Trace */,
+				A07346EE26D4EEAE0021ED07 /* Tools */,
+				A07346F526D4EEAE0021ED07 /* AntiAntiDebug */,
+				A07346F826D4EEAE0021ED07 /* fishhook */,
+				A07346F326D4EEAE0021ED07 /* Supporting Files */,
+			);
+			path = TikTokDevDylib;
+			sourceTree = "<group>";
+		};
+		A07346C526D4EEAD0021ED07 /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				A07346C626D4EEAD0021ED07 /* TikTokDevDylib.xm */,
+				A07346C726D4EEAD0021ED07 /* TikTokDevDylib.mm */,
+			);
+			path = Logos;
+			sourceTree = "<group>";
+		};
+		A07346C926D4EEAD0021ED07 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				A07346CA26D4EEAD0021ED07 /* MDConfigManager.h */,
+				A07346CC26D4EEAD0021ED07 /* MDConfigManager.m */,
+				A07346CE26D4EEAD0021ED07 /* MDCycriptManager.h */,
+				A07346D026D4EEAD0021ED07 /* MDCycriptManager.m */,
+				A07346D226D4EEAD0021ED07 /* MDMethodTrace.h */,
+				A07346D426D4EEAD0021ED07 /* MDMethodTrace.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		A07346D626D4EEAD0021ED07 /* Trace */ = {
+			isa = PBXGroup;
+			children = (
+				A07346D726D4EEAD0021ED07 /* a1a2-selectortramps-arm.s */,
+				A07346D926D4EEAD0021ED07 /* a1a2-selectortramps-arm64.s */,
+				A07346DB26D4EEAD0021ED07 /* a1a2-selectortramps-i386.s */,
+				A07346DD26D4EEAD0021ED07 /* a1a2-selectortramps-x86_64.s */,
+				A07346DF26D4EEAD0021ED07 /* a2a3-selectortramps-arm.s */,
+				A07346E126D4EEAE0021ED07 /* a2a3-selectortramps-i386.s */,
+				A07346E326D4EEAE0021ED07 /* a2a3-selectortramps-x86_64.s */,
+				A07346E526D4EEAE0021ED07 /* OCMethodTrace.h */,
+				A07346E726D4EEAE0021ED07 /* OCMethodTrace.m */,
+				A07346E926D4EEAE0021ED07 /* OCSelectorTrampolines.h */,
+				A07346EB26D4EEAE0021ED07 /* OCSelectorTrampolines.mm */,
+				A07346ED26D4EEAE0021ED07 /* selectortramps.mac */,
+			);
+			path = Trace;
+			sourceTree = "<group>";
+		};
+		A07346EE26D4EEAE0021ED07 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				A07346EF26D4EEAE0021ED07 /* LLDBTools.h */,
+				A07346F126D4EEAE0021ED07 /* LLDBTools.mm */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		A07346F326D4EEAE0021ED07 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A07346F426D4EEAE0021ED07 /* TikTokDevDylib-Prefix.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A07346F526D4EEAE0021ED07 /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				A07346F626D4EEAE0021ED07 /* AntiAntiDebug.m */,
+			);
+			path = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		A07346F826D4EEAE0021ED07 /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				A07346F926D4EEAE0021ED07 /* fishhook.c */,
+				A07346FB26D4EEAE0021ED07 /* fishhook.h */,
+			);
+			path = fishhook;
+			sourceTree = "<group>";
+		};
+		C41E1E8BA3269F498D3AA5EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57718D655B2ED0EFC6FE8895 /* Pods-TikTokDevDylib.debug.xcconfig */,
+				7711188D24A4A141B8EB5107 /* Pods-TikTokDevDylib.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A07346B726D4EEAD0021ED07 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A07346CF26D4EEAD0021ED07 /* MDCycriptManager.h in Headers */,
+				A07346D326D4EEAD0021ED07 /* MDMethodTrace.h in Headers */,
+				A07346FC26D4EEAE0021ED07 /* fishhook.h in Headers */,
+				A07346F026D4EEAE0021ED07 /* LLDBTools.h in Headers */,
+				A07346CB26D4EEAD0021ED07 /* MDConfigManager.h in Headers */,
+				A07346EA26D4EEAE0021ED07 /* OCSelectorTrampolines.h in Headers */,
+				A07346E626D4EEAE0021ED07 /* OCMethodTrace.h in Headers */,
+				A07346FE26D4EEAE0021ED07 /* TikTokDevDylib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A07346A726D4EEAD0021ED07 /* TikTokDev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A073470626D4EEAE0021ED07 /* Build configuration list for PBXNativeTarget "TikTokDev" */;
+			buildPhases = (
+				A07346A126D4EEAD0021ED07 /* Sources */,
+				A07346A226D4EEAD0021ED07 /* Frameworks */,
+				A07346A326D4EEAD0021ED07 /* ShellScript */,
+				A07346A426D4EEAD0021ED07 /* Resources */,
+				A07346A526D4EEAD0021ED07 /* CopyFiles */,
+				A07346A626D4EEAD0021ED07 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A07346BC26D4EEAD0021ED07 /* PBXTargetDependency */,
+			);
+			name = TikTokDev;
+			productName = TikTokDev;
+			productReference = A07346A826D4EEAD0021ED07 /* TikTokDev.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A07346B826D4EEAD0021ED07 /* TikTokDevDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A073470326D4EEAE0021ED07 /* Build configuration list for PBXNativeTarget "TikTokDevDylib" */;
+			buildPhases = (
+				0695C56427CBEEAE5CC569FC /* [CP] Check Pods Manifest.lock */,
+				A07346B426D4EEAD0021ED07 /* ShellScript */,
+				A07346B526D4EEAD0021ED07 /* Sources */,
+				A07346B626D4EEAD0021ED07 /* Frameworks */,
+				A07346B726D4EEAD0021ED07 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TikTokDevDylib;
+			productName = TikTokDevDylib;
+			productReference = A07346B926D4EEAD0021ED07 /* libTikTokDevDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A073469D26D4EEAD0021ED07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					A07346A726D4EEAD0021ED07 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					A07346B826D4EEAD0021ED07 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = A07346A026D4EEAD0021ED07 /* Build configuration list for PBXProject "TikTokDev" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A073469C26D4EEAD0021ED07;
+			productRefGroup = A07346A926D4EEAD0021ED07 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A07346A726D4EEAD0021ED07 /* TikTokDev */,
+				A07346B826D4EEAD0021ED07 /* TikTokDevDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A07346A426D4EEAD0021ED07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A07346B026D4EEAD0021ED07 /* MDConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0695C56427CBEEAE5CC569FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TikTokDevDylib-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A07346A326D4EEAD0021ED07 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh\n";
+		};
+		A07346A626D4EEAD0021ED07 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign\n";
+		};
+		A07346B426D4EEAD0021ED07 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A07346A126D4EEAD0021ED07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A07346B526D4EEAD0021ED07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A07346D126D4EEAD0021ED07 /* MDCycriptManager.m in Sources */,
+				A07346DA26D4EEAD0021ED07 /* a1a2-selectortramps-arm64.s in Sources */,
+				A07346D826D4EEAD0021ED07 /* a1a2-selectortramps-arm.s in Sources */,
+				A07346DE26D4EEAD0021ED07 /* a1a2-selectortramps-x86_64.s in Sources */,
+				A07346E826D4EEAE0021ED07 /* OCMethodTrace.m in Sources */,
+				A07346CD26D4EEAD0021ED07 /* MDConfigManager.m in Sources */,
+				A07346FA26D4EEAE0021ED07 /* fishhook.c in Sources */,
+				A07346F726D4EEAE0021ED07 /* AntiAntiDebug.m in Sources */,
+				A07346EC26D4EEAE0021ED07 /* OCSelectorTrampolines.mm in Sources */,
+				A07346DC26D4EEAD0021ED07 /* a1a2-selectortramps-i386.s in Sources */,
+				A07346E226D4EEAE0021ED07 /* a2a3-selectortramps-i386.s in Sources */,
+				A07346E026D4EEAE0021ED07 /* a2a3-selectortramps-arm.s in Sources */,
+				A07346C826D4EEAD0021ED07 /* TikTokDevDylib.mm in Sources */,
+				A07346F226D4EEAE0021ED07 /* LLDBTools.mm in Sources */,
+				A07346E426D4EEAE0021ED07 /* a2a3-selectortramps-x86_64.s in Sources */,
+				A07346D526D4EEAD0021ED07 /* MDMethodTrace.m in Sources */,
+				A073470026D4EEAE0021ED07 /* TikTokDevDylib.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A07346BC26D4EEAD0021ED07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A07346B826D4EEAD0021ED07 /* TikTokDevDylib */;
+			targetProxy = A07346BB26D4EEAD0021ED07 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A073470126D4EEAE0021ED07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A073470226D4EEAE0021ED07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A073470426D4EEAE0021ED07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57718D655B2ED0EFC6FE8895 /* Pods-TikTokDevDylib.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S75BD6UFJ2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TikTokDevDylib/TikTokDevDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libTikTokDevDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"TikTokDevDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+					"-lcycript",
+					"-framework",
+					RevealServer,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		A073470526D4EEAE0021ED07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7711188D24A4A141B8EB5107 /* Pods-TikTokDevDylib.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = S75BD6UFJ2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TikTokDevDylib/TikTokDevDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libTikTokDevDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"TikTokDevDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A073470726D4EEAE0021ED07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = S75BD6UFJ2;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = TikTokDev/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = YES;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = YES;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = lydi.com.TikTokDev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A073470826D4EEAE0021ED07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S75BD6UFJ2;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = TikTokDev/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = YES;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = YES;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = lydi.com.TikTokDev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A07346A026D4EEAD0021ED07 /* Build configuration list for PBXProject "TikTokDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A073470126D4EEAE0021ED07 /* Debug */,
+				A073470226D4EEAE0021ED07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A073470326D4EEAE0021ED07 /* Build configuration list for PBXNativeTarget "TikTokDevDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A073470426D4EEAE0021ED07 /* Debug */,
+				A073470526D4EEAE0021ED07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A073470626D4EEAE0021ED07 /* Build configuration list for PBXNativeTarget "TikTokDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A073470726D4EEAE0021ED07 /* Debug */,
+				A073470826D4EEAE0021ED07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A073469D26D4EEAD0021ED07 /* Project object */;
+}
